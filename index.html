@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <title>A Jornada do Wolverine</title>
+    <style>
+        body {
+            background-color: #1e1e1e; /* Cor de fundo escura para combinar com o tema */
+            color: white;
+            font-family: "Bangers", sans-serif; /* Fonte temática para Wolverine */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 700px;
+            margin: 0;
+        }
+
+        button {
+            background-color: #ffcc00; /* Cor amarela para destacar os botões */
+            color: #1e1e1e; /* Texto escuro para contraste */
+            font-family: "Bangers", sans-serif;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #e6b800; /* Cor amarela mais escura para efeito hover */
+        }
+
+        .passo {
+            display: none;
+        }
+
+        .passo.ativo {
+            display: block;
+        }
+
+        main {
+            text-align: center;
+            max-width: 90%;
+        }
+
+        img {
+            max-width: 80%; /* Reduz a largura das imagens para não sobrecarregar a página */
+            border-radius: 10px; /* Adiciona bordas arredondadas às imagens */
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="wo.img/inicio.jpg" alt="Imagem de Wolverine em seu início">
+            <p>Logan, conhecido como Wolverine, é um dos mutantes mais poderosos do mundo. Com garras de adamantium e um fator de cura incrível, ele embarca em uma jornada para descobrir mais sobre seu passado e enfrentar os desafios que surgem em seu caminho.</p>
+            <button class="btn-proximo" data-proximo="1">Explorar o Passado</button>
+            <button class="btn-proximo" data-proximo="2">Enfrentar Inimigos</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <img src="wo.img/wo2.jpg" alt="Imagem de um flashback do passado de Wolverine">
+            <p>Durante uma reflexão sobre seu passado, Wolverine revive memórias de suas primeiras missões e do treinamento que o moldou como o combatente imbatível que é hoje.</p>
+            <button class="btn-proximo" data-proximo="3">Continuar a Exploração</button>
+            <button class="btn-proximo" data-proximo="4">Ir para a Próxima Missão</button>
+        </div>
+        <div class="passo" id="passo-2">
+            <img src="wo.img/combate.jpg" alt="Imagem de Wolverine em combate">
+            <p>Wolverine decide enfrentar inimigos que ameaçam a paz. Suas habilidades e força são testadas em batalhas intensas contra vilões que querem dominar o mundo.</p>
+            <button class="btn-proximo" data-proximo="5">Continuar Lutando</button>
+            <button class="btn-proximo" data-proximo="6">Retirar e Planejar</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <img src="wo.img/passado.jpg" alt="Imagem das memórias de Wolverine">
+            <p>Logan continua explorando seu passado, descobrindo segredos escondidos e revelações sobre suas origens. Essas memórias ajudam a moldar suas decisões futuras.</p>
+            <button class="btn-proximo" data-proximo="7">Investigar Mais</button>
+            <button class="btn-proximo" data-proximo="8">Voltar à Ação</button>
+        </div>
+        <div class="passo" id="passo-4">
+            <img src="wo.img/missao.jpg" alt="Imagem de Wolverine em uma missão">
+            <p>Wolverine se prepara para sua próxima missão. Com novas informações sobre seus inimigos, ele está pronto para enfrentar qualquer desafio que se apresente.</p>
+            <button class="btn-proximo" data-proximo="5">Entrar em Combate</button>
+        </div>
+        <div class="passo" id="passo-5">
+            <img src="wo.img/vitoria.jpg" alt="Imagem de Wolverine comemorando uma vitória">
+            <p>Após intensos combates, Wolverine emerge vitorioso. Seus inimigos são derrotados, mas a batalha pela paz continua. Ele reflete sobre suas vitórias e os desafios que ainda estão por vir.</p>
+            <button class="btn-proximo" data-proximo="9">Celebrar</button>
+        </div>
+        <div class="passo" id="passo-6">
+            <img src="wo.img/planejamento.jpg" alt="Imagem de Wolverine planejando sua próxima ação">
+            <p>Logan decide se retirar temporariamente para reavaliar sua estratégia. A preparação é crucial para enfrentar os próximos desafios com mais eficácia.</p>
+            <button class="btn-proximo" data-proximo="7">Retornar à Missão</button>
+        </div>
+        <div class="passo" id="passo-7">
+            <img src="wo.img/farejando.jpg" alt="Imagem de Wolverine investigando pistas">
+            <p>Wolverine investiga pistas importantes sobre novos inimigos e ameaças. Ele utiliza suas habilidades e conhecimentos adquiridos para se preparar para a próxima batalha.</p>
+            <button class="btn-proximo" data-proximo="8">Voltar à Ação</button>
+        </div>
+        <div class="passo" id="passo-8">
+            <img src="wo.img/acao.jpg" alt="Imagem de Wolverine em ação">
+            <p>Wolverine retoma a ação com renovada determinação. Ele enfrenta novos inimigos e utiliza suas habilidades aprimoradas para superar os desafios que surgem.</p>
+            <button class="btn-proximo" data-proximo="5">Continuar Lutando</button>
+        </div>
+        <div class="passo" id="passo-9">
+            <img src="wo.img/sv.jpg" alt="Imagem de Wolverine celebrando uma conquista">
+            <p>Após uma grande vitória, Wolverine celebra suas conquistas. Ele reflete sobre a jornada que percorreu e o impacto que teve no mundo.</p>
+            <button class="btn-proximo" data-proximo="10">Buscar Novos Desafios</button>
+        </div>
+        <div class="passo" id="passo-10">
+            <img src="wo.img/dk.jpg" alt="Imagem de Wolverine em busca de novos desafios">
+            <p>Wolverine busca novos desafios e continua sua jornada, sempre em busca de novas aventuras e oportunidades para utilizar suas habilidades únicas.</p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

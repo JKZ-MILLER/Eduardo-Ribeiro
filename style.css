@@ -1,0 +1,46 @@
+body {
+    background-color: #000000; /* Preto, para combinar com o tema sombrio do Wolverine */
+    color: #f5f5f5; /* Cor de texto clara para contraste com o fundo escuro */
+    font-family: "Bai Jamjuree", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    margin: 0;
+}
+
+button {
+    background-color: #ffcc00; /* Amarelo, referência ao traje do Wolverine */
+    color: #000000; /* Preto para o texto, combinando com o fundo dos botões */
+    font-family: "Bai Jamjuree", sans-serif;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #e6b800; /* Amarelo mais escuro para o efeito hover */
+    color: #ffffff; /* Texto branco quando o botão está em hover */
+}
+
+.passo {
+    display: none;
+}
+
+.passo.ativo {
+    display: block;
+}
+
+main {
+    text-align: center;
+    max-width: 90%;
+}
+
+img {
+    max-width: 70%; /* Reduz a largura das imagens para não sobrecarregar a página */
+    border: 3px solid #ffcc00; /* Borda amarela para as imagens, combinando com o tema do Wolverine */
+    border-radius: 10px; /* Adiciona bordas arredondadas às imagens */
+}
